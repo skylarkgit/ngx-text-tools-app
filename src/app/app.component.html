@@ -1,0 +1,14 @@
+<div>
+  <b><i>Words</i></b>
+  <div *ngFor="let word of words">
+    {{word}}
+  </div>
+</div>
+<input [(ngModel)]="term">
+<button (click)="onSearchRank()">Search</button>
+<div>
+  <b><i>Results</i></b>
+  <div *ngFor="let word of results">
+    {{word}}
+  </div>
+</div>
